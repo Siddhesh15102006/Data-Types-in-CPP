@@ -1,4 +1,4 @@
-// Experiment Number - 1
+// Experiment Number - 2
 // Siddhesh Gajare
 // ENTC (A3)
 // 25070122511
@@ -6,27 +6,53 @@
 #include<iostream>
 using namespace std;
 
-int main ()
-{
-   cout <<"Size of char:"<<sizeof(char)<<endl;
-   cout <<"Size of int:"<<sizeof(int)<<endl;
-   cout <<"Size of short int:"<<sizeof(short int)<<endl;
-   cout <<"Size of long int:"<<sizeof(long int)<<endl;
-   cout <<"Size of float:"<<sizeof(float)<<endl;
-   cout <<"Size of double:"<<sizeof(double)<<endl;
-   cout <<"Size of wchar_t:"<<sizeof(wchar_t)<<endl;
+int main () {
+    int a;
+    cout<<"Enter any integer: ";
+    cin>>a;
+    cout<<"Integer = "<<a<<" and size is "<<sizeof(a)<<" bytes"<<endl;
 
-return 0;
+    float b;
+    cout<<"Enter any number with decimal: ";
+    cin>>b;
+    cout<<"Float = "<<b<<" and size is "<<sizeof(b)<<" bytes"<<endl;
+
+    string c;
+    cout<<"Enter any word: ";
+    cin>>c;
+    cout<<"Srting = "<<c<<" and size is "<<sizeof(c)<<" bytes"<<endl;
+
+    double d;
+    cout<<"Enter any number with bigger decimal: ";
+    cin>>b;
+    cout<<"Double = "<<d<<" and size is "<<sizeof(d)<<" bytes"<<endl;
+
+    char e;
+    cout<<"Enter any character: ";
+    cin>>e;
+    cout<<"Character = "<<e<<" and size is "<<sizeof(e)<<" bytes"<<endl;
+
+    bool f;
+    cout<<"Enter True/False: ";
+    cin>>boolalpha;
+    cin>>f;
+    cout<<"Boolean = "<<f<<" and size is "<<sizeof(f)<<" bytes"<<endl;
+    return 0;
 }
 
 Output :-
-Size of char:1
-Size of int:4
-Size of short int:2
-Size of long int:8
-Size of float:4
-Size of double:8
-Size of wchar_t:4
+Enter any integer: 10
+Integer = 10 and size is 4 bytes
+Enter any number with decimal: 15.5
+Float = 15.5 and size is 4 bytes
+Enter any word: Hello
+Srting = Hello and size is 32 bytes
+Enter any number with bigger decimal: 3.1428
+Double = 7.87263e-85 and size is 8 bytes
+Enter any character: S
+Character = S and size is 1 bytes
+Enter True/False: True
+Boolean = 0 and size is 1 bytes
 
 
 === Code Execution Successful ===
